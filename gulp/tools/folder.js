@@ -1,19 +1,19 @@
 /*
-* 获取项目目录名称
-* 排除 bower_components、themes、common 目录
-*/
+ * 获取项目目录名称
+ * 排除 bower_components、themes、common 目录
+ */
 var fs = require('fs');
 
 var exclude = ['bower_components', 'lib', 'themes', 'common'];
 
 /*
-* @params:
-*     callback: function(){}
-*/
-module.exports = function(params) {
+ * @params:
+ *     callback: function(){}
+ */
+module.exports = function (params) {
     var arr = [];
 
-    fs.readdir(process.cwd() +'/source', function (err, files) {
+    fs.readdir(process.cwd() + '/source', function (err, files) {
 
         if (err) {
             console.log(err);
@@ -21,10 +21,10 @@ module.exports = function(params) {
         }
 
         files.forEach(function (filename) {
-            var stats = fs.lstatSync('source/'+ filename);
+            var stats = fs.lstatSync('source/' + filename);
 
             if (stats.isDirectory() && !/\./.test(filename)) {
-                
+
                 if (exclude.length > 0) {
 
                     var buff = false;
@@ -49,5 +49,5 @@ module.exports = function(params) {
 
         params.callback(arr);
     });
-            
+
 };

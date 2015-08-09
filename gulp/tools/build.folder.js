@@ -1,13 +1,13 @@
 var fs = require('fs');
 
-module.exports = function() {
-    var file = './.folder',
-        dir = '../appcord/www/',
-        exists = fs.existsSync(file);
+module.exports = function () {
+	var file = './.folder',
+		dir = '../appcord/www/',
+		exists = fs.existsSync(file);
 
-    if (exists) {
-        dir = fs.readFileSync(file).toString('utf8');
-    }
+	if (exists) {
+		dir = fs.readFileSync(file).toString('utf8');
+	}
 
-    return dir;
+	return dir;
 };
