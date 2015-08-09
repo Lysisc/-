@@ -1,10 +1,10 @@
 // 检查用户是否登录
-qianXun.directive('checkUser', function ($state, $rootScope, cachePool, widget) {
+qianXun.directive('checkUser', function ($state, $rootScope, cachePool) {
     return {
         controller: function () {
             $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
                 var uid = 0,
-                    UserInfo = cachePool.pull('UserInfo') || '';
+                    UserInfo = cachePool.pull('UserInfo');
 
                 if (UserInfo) {
                     uid = UserInfo.UserId;

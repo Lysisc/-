@@ -32,7 +32,7 @@ qianXun.directive('pageBack', function ($window, $state, $rootScope, $stateParam
 })
 
 
-.directive('pageJump', function ($window, $state, $rootScope, $stateParams, $ionicHistory, $ionicViewSwitcher) {
+.directive('pageJump', function ($state, $stateParams, $ionicHistory, $ionicViewSwitcher) {
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
