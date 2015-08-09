@@ -1,0 +1,196 @@
+﻿/* ----------------------------reset--------------------------- */
+input, textarea, select, button {
+    border: none;
+    resize: none;
+    outline: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+a, a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------- */
+//主view背景色
+.pane, .view {
+    background: #e6e8e7;
+}
+//icon字体
+.ion-loading {
+    font-family: "Ionicons";
+}
+// 加载中样式
+.loading {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -35px;
+    z-index: 10;
+    .ion-loading {
+        color: #fff;
+        position: absolute;
+        font-size: 50px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        left: 50%;
+        top: 50%;
+        margin: -25px 0 0 -25px;
+        -webkit-animation: mod_loading 1.58s linear infinite;
+        animation: mod_loading 1.58s linear infinite;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    .ion-loading:before {
+        content: "\f29d";
+    }
+}
+@-webkit-keyframes mod_loading {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes mod_loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.loading-container {
+    .loading {
+        .spinner {
+            stroke: #fff;
+            fill: #fff;
+        }
+    }
+}
+//文字超出显示...
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+//多行文字超出显示... 参数：line-clamp
+@mixin multi_ellipsis($line:3) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+//toast样式
+.notifier {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    color: #FFF;
+    span {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, .6);
+    }
+}
+//定义滚动容器
+.mod_wrapper {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+//定义白色布局
+.mod_layout {
+    background-color: #fff;
+    padding: 5px 10px;
+    // border-bottom: 2px solid #cacdcb;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
+}
+//定义白色布局标题
+.mod_layout_title {
+    font-size: 12px;
+    line-height: 28px;
+    padding: 0 5px;
+}
+#js_view {
+    width: 100%;
+    height: 100%;
+}
+
+//margin
+@mixin mb($margin:0px) {
+    margin-bottom: $margin !important;
+}
+
+.mb0 {
+    @include mb();
+}
+.mb5 {
+    @include mb(5px);
+}
+.mb10 {
+    @include mb(10px);
+}
+
+.mod_list_loading {
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+//没有数据
+.mod_no_more {
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+@mixin shadow() {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.is_ios {
+    .ios_status_bar {
+        .mod_header_opacity,
+        .user_header {
+            height: 64px;
+            ul {
+                padding-top: 20px;
+            }
+        }
+        .forum_cate_two_list {
+            padding-top: 90px;
+        }
+        .forum_detail {
+            padding-top: 20px;
+        }
+        .search_find {
+            border-top: 20px solid #fff;
+        }
+        .forum_cate_description {
+            padding-top: 70px;
+        }
+        .msg_index {
+            padding-top: 20px;
+        }
+
+        .user_info_top {
+            padding-top: 70px;
+        }
+    }
+}

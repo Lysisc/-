@@ -1,0 +1,9 @@
+﻿@mixin font_icon {
+    font-family: "Ionicons";
+    font-weight: normal;
+}
+
+@import "ionic/ionic.scss";
+
+@import "sass/reset.scss";
+@import "sass/main.scss";

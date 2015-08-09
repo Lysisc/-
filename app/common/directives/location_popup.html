@@ -1,0 +1,16 @@
+<div class="choose_location" ngd-click="chooseLocation($event)" selector="li">
+	<ion-scroll class="select_box">
+		<ul>
+			<li ng-repeat="(k, v) in CityList track by $index" ng-class="{current: k == tmpCity }" data-mid="{{k}}">
+				{{v.name}}
+			</li>
+		</ul>
+	</ion-scroll>
+	<ion-scroll class="select_box">
+		<ul>
+			<li ng-repeat="(k, v) in CitySubList track by $index" ng-class="{current: k == tmpSubCity }" data-sid="{{k}}">
+				{{v.name}}
+			</li>
+		</ul>
+	</ion-scroll>
+</div>

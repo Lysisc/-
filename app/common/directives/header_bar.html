@@ -1,0 +1,15 @@
+<ion-header-bar class="mod_header" ng-class="{transparent:isTransparent}" ng-style="HeaderBg" align-title="center">
+	<div class="buttons">
+		<button page-back class="back_button"></button>
+	</div>
+	
+    <h1 class="title" ng-bind-html="Page.Title"></h1>
+
+	<div class="buttons buttons-right" ng-if="Page.RightText">
+		<button class="right_button" ng-click="Page.RightFun()">{{Page.RightText}}</button>
+	</div>
+
+    <!-- <div class="buttons buttons-right" ng-if="Page.Next">
+        <button class="right_button" page-jump data-router="{{Page.SiteUrl.router}}" data-options="{{Page.SiteUrl.options}}">{{Page.Next}}</button>
+    </div> -->
+</ion-header-bar>

@@ -1,0 +1,23 @@
+﻿.mod_header {
+    background-color: rgba(255, 255, 255, 0.9);
+    &.transparent {
+        background: rgba(255, 255, 255, 0);
+    }
+    .back_button {
+        font-size: 15px;
+        width: 34px;
+        padding: 0;
+        background: url(img/back_arrow.png) no-repeat 8px center;
+        background-size: 15px auto;
+    }
+    .right_button {
+        padding-right: 10px;
+        font-size: 14px;
+        color: #3cc482;
+    }
+    .title {
+        span {
+            color: #cacdcb;
+        }
+    }
+}
