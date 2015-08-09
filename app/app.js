@@ -19,13 +19,4 @@ qianXun.config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/qianxun/shop-list.htm');
 
-    // 处理在状态配置中指定的路由之外的 url 请求
-    // var isShow = localStorage.getItem('qianxun_START');
-
-    // if (isShow) {
-    //     $urlRouterProvider.otherwise('/forum/start.htm');
-    // } else {
-    //     $urlRouterProvider.otherwise('/forum/start.htm');
-    // }
-
 });
