@@ -1,25 +1,4 @@
-﻿.mod_header {
-    background-color: rgba(255, 255, 255, 0.9);
-    .back_button {
-        font-size: 15px;
-        width: 34px;
-        padding: 0;
-        background: url(img/back_arrow.png) no-repeat 8px center;
-        background-size: 15px auto;
-    }
-    .right_button {
-        padding-right: 10px;
-        font-size: 14px;
-        color: #3cc482;
-    }
-    .title {
-        span {
-            color: #cacdcb;
-        }
-    }
-}
-
-.mod_tab_box {
+﻿.mod_tab_box {
     display: -webkit-box;
     width: 100%;
     height: 44px;
@@ -36,6 +15,7 @@
         -webkit-box-flex: 1;
         box-flex: 1;
         text-align: center;
+        @include ellipsis;
         @include border_right_half;
         i {
             margin-left: 6px;
@@ -104,6 +84,7 @@
         padding: 10px 15px;
         @include border_bottom_half;
         h3 {
+            color: #296ad4;
             font-size: 15px;
             margin-bottom: 5px;
         }
@@ -111,12 +92,110 @@
             font-size: 13px;
             color: #ffaa00;
             margin-bottom: 0;
+            @include ellipsis;
             span {
                 color: #999;
                 display: inline-block;
-                width: 50%;
+                width: 45%;
                 padding-left: 20px;
+                vertical-align: top;
             }
         }
+    }
+}
+
+.det_warp {
+    padding: 10px 15px;
+    background-color: #fff;
+    .scroll {
+        padding-bottom: 44px;
+    }
+    .det_title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #296ad4;
+        @include ellipsis;
+    }
+    .det_address {
+        font-size: 13px;
+        color: #999;
+        margin-bottom: 5px;
+        @include ellipsis;
+    }
+    .det_attr {
+        width: 100%;
+        overflow: hidden;
+        span {
+            display: inline-block;
+            @include border_half;
+            background-color: #ffaa00;
+            color: #fff;
+            padding: 5px;
+            font-size: 13px;
+            line-height: 13px;
+        }
+    }
+    .det_cont {
+        padding-top: 10px;
+        h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #4e8ef7;
+        }
+        p {
+            color: #999;
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+    }
+    .det_job {
+        @include border_top_half;
+        margin-top: 5px;
+        padding-top: 10px;
+        h3 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #4e8ef7;
+            a {
+                float: right;
+                font-size: 12px;
+                @include border_half;
+                padding: 3px;
+                font-weight: normal;
+                margin-top: -2px;
+            }
+        }
+        .job_item {
+            color: #ffaa00;
+            font-size: 14px;
+            span {
+                color: #333;
+                display: inline-block;
+                width: 45%;
+            }
+            p {
+                color: #999;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.det_contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 44px;
+    background-color: #4e8ef7;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    span {
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: top;
     }
 }

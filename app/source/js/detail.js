@@ -1,6 +1,6 @@
 qianXun.controller('shopDetailCtrl', function ($scope, $stateParams, widget) {
 
-    alert(1);
+    // alert(1);
 
 
 });

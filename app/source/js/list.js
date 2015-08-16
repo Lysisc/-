@@ -2,30 +2,6 @@ qianXun.controller('shopListCtrl', function ($scope, $stateParams, $ionicNavBarD
 
     widget.tabSwitch($scope);
 
-    // $scope.tabSwitch = function (index) {
-    //     var $tabCont = angular.element(document.querySelectorAll('.tab_content')),
-    //         $backDrop = angular.element(document.querySelector('.tab_back_drop'));
-
-    //     if (index) {
-
-    //         var $thisTabCont = $tabCont.eq(index - 1);
-
-    //         if ($thisTabCont.hasClass('ng-hide')) {
-    //             $tabCont.addClass('ng-hide');
-    //             $thisTabCont.removeClass('ng-hide');
-    //             $backDrop.addClass('active');
-    //         } else {
-    //             $thisTabCont.addClass('ng-hide');
-    //             $backDrop.removeClass('active');
-    //         }
-
-    //     } else {
-    //         $tabCont.addClass('ng-hide');
-    //         $backDrop.removeClass('active');
-    //     }
-
-    // };
-
     // $scope.Deploy = {
     //     cateId: $stateParams.id,
     //     currentTab: 1,

@@ -1,35 +1,63 @@
 <header-bar title="招聘详情"></header-bar>
 <ion-view>
-    <div class="mod_tab_box">
-        <a class="tab" ng-click="tabSwitch(1)">全杭州<i class="icon ion-arrow-down-b"></i></a>
-        <a class="tab" ng-click="tabSwitch(2)">全部薪资<i class="icon ion-arrow-down-b"></i></a>
-        <a class="tab" ng-click="tabSwitch(3)">发型师<i class="icon ion-arrow-down-b"></i></a>
-        <div class="tab_content ng-hide">111</div>
-        <div class="tab_content ng-hide">222</div>
-        <div class="tab_content ng-hide">333</div>
-    </div>
-    <ion-content class="paddingtop44">
-        <ul class="shop_list">
-            <li>
-                <h3>西湖区-永琪美发（西湖店）</h3>
-                <p><span>发型师</span>底薪500+30%提成</p>
-                <p><span>技师</span>底薪500+30%提成</p>
-                <p><span>助理</span>底薪500+30%提成</p>
-            </li>
-            <li>
-                <h3>西湖区-永琪美发（西湖店）</h3>
-                <p><span>发型师</span>底薪500+30%提成</p>
-                <p><span>技师</span>底薪500+30%提成</p>
-                <p><span>助理</span>底薪500+30%提成</p>
-            </li>
-            <li>
-                <h3>西湖区-永琪美发（西湖店）</h3>
-                <p><span>发型师</span>底薪500+30%提成</p>
-                <p><span>技师</span>底薪500+30%提成</p>
-                <p><span>助理</span>底薪500+30%提成</p>
-            </li>
-        </ul>
-        <ion-infinite-scroll on-infinite="loadMore()" distance="1%" ng-if="Deploy.isMore"></ion-infinite-scroll>
-        <div class="mod_no_more" ng-if="!Deploy.isMore">没有更多数据了！</div>
+    <ion-content class="det_warp">
+        <h2 class="det_title">永琪美发（西湖店）</h2>
+        <p class="det_address">杭州市西湖区莫干山路432号杭州银泰广场2楼321室</p>
+        <div class="det_attr">
+            <span>连锁综合店</span>
+            <span>100平米</span>
+            <span>总员工数</span>
+        </div>
+        <div class="det_cont">
+            <h3>服务价位</h3>
+            <p><span>洗剪吹55元起</span><span>染发168元起</span><span>烫发298元起</span></p>
+            <p>最低折扣：2折</p>
+        </div>
+        <div class="det_cont">
+            <h3>服务价位</h3>
+            <p><span>每天客流35人</span><span>女客比例>50%</span><span>新客比例>20%</span></p>
+            <p>主要顾客类型：白领、学生、居民</p>
+        </div>
+        <div class="det_cont">
+            <h3>工作时间</h3>
+            <p>每天工作10小时，每月休息4天</p>
+        </div>
+        <div class="det_cont">
+            <h3>培训计划</h3>
+            <p>报销培训费用比例50%</p>
+        </div>
+        <div class="det_cont">
+            <h3>吃住福利</h3>
+            <p>包吃 包住</p>
+        </div>
+        <div class="det_job">
+            <h3><a>意见反馈</a>热招职位</h3>
+            <div class="job_item">
+                <span>发型总监</span>保底5000+30%提成
+                <p>前3个月保底
+                    <br>经验要求：3年以上
+                    <br>其他要求：擅长男士发型设计</p>
+            </div>
+            <div class="job_item">
+                <span>洗头工</span>保底500+30%提成
+                <p>暂无备注</p>
+            </div>
+            <div class="job_item">
+                <span>洗头工</span>保底500+30%提成
+                <p>暂无备注</p>
+            </div>
+            <div class="job_item">
+                <span>洗头工</span>保底500+30%提成
+                <p>暂无备注</p>
+            </div>
+            <div class="job_item">
+                <span>洗头工</span>保底500+30%提成
+                <p>暂无备注</p>
+            </div>
+        </div>
     </ion-content>
+    <button class="det_contact">王先生
+        <br> 15743251234
+        <span>（联系前请先说明来自好找招聘）</span>
+    </button>
 </ion-view>
