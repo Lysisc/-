@@ -8,7 +8,7 @@ qianXun
  *      transparent              //定义是否透明
  *  </header-bar>
  */
-.directive('headerBar', function ($window) {
+    .directive('headerBar', function ($window) {
     return {
         restrict: 'E',
         replace: true,
@@ -57,22 +57,5 @@ qianXun
             // }
 
         }
-    };
-})
-
-
-.directive('headerOpacity', function (
-    $state,
-    $ionicViewSwitcher,
-    $window,
-    cachePool,
-    ENV
-) {
-
-    return {
-        restrict: 'E',
-        replace: true,
-        templateUrl: 'common/directives/header_opacity.html',
-        controller: function ($scope, $element, $rootScope, $compile, $timeout, widget) {}
     };
 });

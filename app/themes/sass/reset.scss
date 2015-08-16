@@ -1,5 +1,9 @@
 ﻿/* ----------------------------reset--------------------------- */
-input, textarea, select, button {
+
+input,
+textarea,
+select,
+button {
     border: none;
     resize: none;
     outline: 0;
@@ -8,24 +12,104 @@ input, textarea, select, button {
     appearance: none;
     background-color: transparent;
 }
+
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     appearance: none;
 }
-a, a:hover {
+
+a,
+a:hover {
     color: #333;
     text-decoration: none;
 }
 
-/* ------------------------------------------------------------- */
-//主view背景色
-.pane, .view {
-    background: #e6e8e7;
+@mixin border_half {
+    border-width: 1px;
+    border: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
 }
+
+@mixin border_top_half {
+    border-width: 0;
+    border-top: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_bottom_half {
+    border-width: 0;
+    border-bottom: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_left_half {
+    border-width: 0;
+    border-left: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_right_half {
+    border-width: 0;
+    border-right: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_vertical_half {
+    border-width: 0;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_horizontal_half {
+    border-width: 0;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_left_bottom_half {
+    border-width: 0;
+    border-left: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_right_bottom_half {
+    border-width: 0;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_left_top_half {
+    border-width: 0;
+    border-top: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+@mixin border_right_top_half {
+    border-width: 0;
+    border-top: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    -webkit-border-image: url(img/icon_border_half.png) 2 stretch;
+}
+
+
+/* ------------------------------------------------------------- */
+
+//主view背景色
+.pane,
+.view {
+    background-color: #e6e8e7;
+}
+
 //icon字体
 .ion-loading {
     font-family: "Ionicons";
 }
+
 // 加载中样式
 .loading {
     width: 70px;
@@ -58,17 +142,18 @@ a, a:hover {
         content: "\f29d";
     }
 }
+
 @-webkit-keyframes mod_loading {
     to {
         -webkit-transform: rotate(360deg);
     }
 }
+
 @keyframes mod_loading {
     to {
         transform: rotate(360deg);
     }
 }
-
 
 .loading-container {
     .loading {
@@ -78,12 +163,14 @@ a, a:hover {
         }
     }
 }
+
 //文字超出显示...
 @mixin ellipsis {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
+
 //多行文字超出显示... 参数：line-clamp
 @mixin multi_ellipsis($line:3) {
     display: -webkit-box;
@@ -91,6 +178,7 @@ a, a:hover {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 //toast样式
 .notifier {
     position: absolute;
@@ -106,6 +194,7 @@ a, a:hover {
         background-color: rgba(0, 0, 0, .6);
     }
 }
+
 //定义滚动容器
 .mod_wrapper {
     padding-top: 10px;
@@ -113,6 +202,7 @@ a, a:hover {
     padding-left: 10px;
     padding-bottom: 10px;
 }
+
 //定义白色布局
 .mod_layout {
     background-color: #fff;
@@ -121,15 +211,12 @@ a, a:hover {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     margin-bottom: 10px;
 }
+
 //定义白色布局标题
 .mod_layout_title {
     font-size: 12px;
     line-height: 28px;
     padding: 0 5px;
-}
-#js_view {
-    width: 100%;
-    height: 100%;
 }
 
 //margin
@@ -140,9 +227,11 @@ a, a:hover {
 .mb0 {
     @include mb();
 }
+
 .mb5 {
     @include mb(5px);
 }
+
 .mb10 {
     @include mb(10px);
 }
@@ -152,6 +241,7 @@ a, a:hover {
     line-height: 30px;
     margin-bottom: 10px;
 }
+
 //没有数据
 .mod_no_more {
     text-align: center;
@@ -162,35 +252,4 @@ a, a:hover {
 @mixin shadow() {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-}
-
-.is_ios {
-    .ios_status_bar {
-        .mod_header_opacity,
-        .user_header {
-            height: 64px;
-            ul {
-                padding-top: 20px;
-            }
-        }
-        .forum_cate_two_list {
-            padding-top: 90px;
-        }
-        .forum_detail {
-            padding-top: 20px;
-        }
-        .search_find {
-            border-top: 20px solid #fff;
-        }
-        .forum_cate_description {
-            padding-top: 70px;
-        }
-        .msg_index {
-            padding-top: 20px;
-        }
-
-        .user_info_top {
-            padding-top: 70px;
-        }
-    }
 }

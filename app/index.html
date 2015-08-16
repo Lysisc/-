@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html class="no-js" ng-app="qianXun">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>千寻招聘</title>
-        <!-- build:css -->
-        <link rel="stylesheet" href="themes/all.css">
-        <!-- endbuild -->
-    </head>
-    <body>
 
-        <div ui-view></div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>千寻招聘</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="themes/all.css">
+    <!-- endbuild -->
+</head>
 
-        <!-- build:js -->
-        <!--<script src="lib/config.js"></script>
+<body>
+    <div ui-view>
+        <ion-nav-view></ion-nav-view>
+    </div>
+    <!-- build:js -->
+    <!--<script src="lib/config.js"></script>
         <script src="lib/md5.js"></script>
         <script src="lib/megapix-image.js"></script>-->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-bindonce/bindonce.js"></script>
+    <script src="bower_components/ionic/release/js/ionic.js"></script>
+    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+    <script src="app.js"></script>
+    <!-- injectcommon:js -->
+    <script src="common/cache_service.js"></script>
+    <script src="common/env.js"></script>
+    <script src="common/http_interceptor.js"></script>
+    <script src="common/widget.js"></script>
+    <script src="common/directives/check_user.js"></script>
+    <script src="common/directives/delegate_event.js"></script>
+    <script src="common/directives/header_bar.js"></script>
+    <script src="common/directives/router_redirect.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="source/js/list.js"></script>
+    <script src="source/js/detail.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+</body>
 
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-animate/angular-animate.js"></script>
-        <script src="bower_components/angular-touch/angular-touch.js"></script>
-        <script src="bower_components/angular-route/angular-route.js"></script>
-        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-        <script src="bower_components/angular-bindonce/bindonce.js"></script>
-        <script src="bower_components/ionic/release/js/ionic.js"></script>
-        <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
-
-        <script src="app.js"></script>
-
-        <!-- injectcommon:js -->
-        <script src="common/cache_service.js"></script>
-        <script src="common/env.js"></script>
-        <script src="common/http_interceptor.js"></script>
-        <script src="common/widget.js"></script>
-        <script src="common/directives/check_user.js"></script>
-        <script src="common/directives/delegate_event.js"></script>
-        <script src="common/directives/location_popup.js"></script>
-        <script src="common/directives/router_redirect.js"></script>
-        <!-- endinject -->
-
-        <!-- inject:js -->
-        <script src="source/js/shop_list.js"></script>
-        <!-- endinject -->
-        <!-- endbuild -->
-    </body>
 </html>

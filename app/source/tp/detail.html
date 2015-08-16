@@ -1,0 +1,35 @@
+<header-bar title="招聘详情"></header-bar>
+<ion-view>
+    <div class="mod_tab_box">
+        <a class="tab" ng-click="tabSwitch(1)">全杭州<i class="icon ion-arrow-down-b"></i></a>
+        <a class="tab" ng-click="tabSwitch(2)">全部薪资<i class="icon ion-arrow-down-b"></i></a>
+        <a class="tab" ng-click="tabSwitch(3)">发型师<i class="icon ion-arrow-down-b"></i></a>
+        <div class="tab_content ng-hide">111</div>
+        <div class="tab_content ng-hide">222</div>
+        <div class="tab_content ng-hide">333</div>
+    </div>
+    <ion-content class="paddingtop44">
+        <ul class="shop_list">
+            <li>
+                <h3>西湖区-永琪美发（西湖店）</h3>
+                <p><span>发型师</span>底薪500+30%提成</p>
+                <p><span>技师</span>底薪500+30%提成</p>
+                <p><span>助理</span>底薪500+30%提成</p>
+            </li>
+            <li>
+                <h3>西湖区-永琪美发（西湖店）</h3>
+                <p><span>发型师</span>底薪500+30%提成</p>
+                <p><span>技师</span>底薪500+30%提成</p>
+                <p><span>助理</span>底薪500+30%提成</p>
+            </li>
+            <li>
+                <h3>西湖区-永琪美发（西湖店）</h3>
+                <p><span>发型师</span>底薪500+30%提成</p>
+                <p><span>技师</span>底薪500+30%提成</p>
+                <p><span>助理</span>底薪500+30%提成</p>
+            </li>
+        </ul>
+        <ion-infinite-scroll on-infinite="loadMore()" distance="1%" ng-if="Deploy.isMore"></ion-infinite-scroll>
+        <div class="mod_no_more" ng-if="!Deploy.isMore">没有更多数据了！</div>
+    </ion-content>
+</ion-view>

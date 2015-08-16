@@ -19,7 +19,7 @@ qianXun.directive('pageBack', function ($window, $state, $rootScope, $stateParam
 
                 // } else { // 默认执行浏览器后退
 
-                $ionicViewSwitcher.nextDirection('back'); //forward
+                $ionicViewSwitcher.nextDirection('back'); //back
                 $window.history.back();
                 // }
 
