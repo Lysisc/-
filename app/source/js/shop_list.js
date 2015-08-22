@@ -1,7 +1,5 @@
 qianXun.controller('shopListCtrl', function ($scope, $stateParams, $ionicNavBarDelegate, $ionicScrollDelegate, widget) {
 
-    widget.tabSwitch($scope);
-
     // $scope.Deploy = {
     //     cateId: $stateParams.id,
     //     currentTab: 1,

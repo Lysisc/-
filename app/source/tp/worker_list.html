@@ -1,0 +1,56 @@
+<header-bar title="招人"></header-bar>
+
+<ion-view>
+
+    <div tab-switch class="mod_tab_box">
+        <a class="tab">全部职位<i class="icon ion-arrow-down-b"></i></a>
+        <a class="tab">无经验要求<i class="icon ion-arrow-down-b"></i></a>
+        <div class="tab_content ng-hide">
+            <span class="icon ion-checkmark">全部职位</span>
+            <span class="icon ion-checkmark">助理</span>
+            <span class="icon ion-checkmark">技师</span>
+            <span class="icon ion-checkmark">发型师</span>
+            <span class="icon ion-checkmark">总监</span>
+            <span class="icon ion-checkmark">店长</span>
+        </div>
+        <div class="tab_content ng-hide">
+            <span class="icon ion-checkmark">无经验要求</span>
+            <span class="icon ion-checkmark">1年以上</span>
+            <span class="icon ion-checkmark">2年以上</span>
+            <span class="icon ion-checkmark">3年以上</span>
+            <span class="icon ion-checkmark">4年以上</span>
+            <span class="icon ion-checkmark">5年以上</span>
+            <span class="icon ion-checkmark">10年以上</span>
+        </div>
+    </div>
+    <div class="tab_back_drop"></div>
+
+    <ion-content class="paddingtop44">
+
+        <ul class="worker_list">
+            <li page-jump data-router="qianxun.worker-detail" data-options="{id:1234}">
+                <h3>王冲</h3>
+                <p><span>男</span><span>22岁</span><span>3年经验</span></p>
+                <p><span>求职意向：发型总监</span><span>最近工作：发型师</span></p>
+            </li>
+            <li page-jump data-router="qianxun.worker-detail" data-options="{id:1234}">
+                <h3>王冲</h3>
+                <p><span>男</span><span>22岁</span><span>3年经验</span></p>
+                <p><span>求职意向：发型总监</span><span>最近工作：发型师</span></p>
+            </li>
+            <li page-jump data-router="qianxun.worker-detail" data-options="{id:1234}">
+                <h3>王冲</h3>
+                <p><span>男</span><span>22岁</span><span>3年经验</span></p>
+                <p><span>求职意向：发型总监</span><span>最近工作：发型师</span></p>
+            </li>
+        </ul>
+
+        <p class="worker_btn_tip">入驻后可查看更多人才</p>
+        <button class="worker_btn">我要入驻</button>
+
+        <ion-infinite-scroll on-infinite="loadMore()" distance="1%" ng-if="Deploy.isMore"></ion-infinite-scroll>
+
+        <div class="mod_no_more" ng-if="!Deploy.isMore">没有更多数据了！</div>
+
+    </ion-content>
+</ion-view>

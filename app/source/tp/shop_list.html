@@ -1,0 +1,71 @@
+<header-bar title="找工作"></header-bar>
+
+<ion-view>
+
+    <div tab-switch class="mod_tab_box">
+        <a class="tab">全杭州<i class="icon ion-arrow-down-b"></i></a>
+        <a class="tab">全部薪资<i class="icon ion-arrow-down-b"></i></a>
+        <a class="tab">发型师<i class="icon ion-arrow-down-b"></i></a>
+        <div class="tab_content ng-hide">
+            <span class="icon ion-checkmark">全杭州</span>
+            <span class="icon ion-checkmark">西湖区</span>
+            <span class="icon ion-checkmark">上城区</span>
+            <span class="icon ion-checkmark active">下城区</span>
+            <span class="icon ion-checkmark">江干区</span>
+            <span class="icon ion-checkmark">滨江区</span>
+            <span class="icon ion-checkmark">拱墅区</span>
+            <span class="icon ion-checkmark">萧山区</span>
+            <span class="icon ion-checkmark">余杭区</span>
+        </div>
+        <div class="tab_content ng-hide">
+            <span class="icon ion-checkmark">全部薪资</span>
+            <span class="icon ion-checkmark">10%提成</span>
+            <span class="icon ion-checkmark">20%提成</span>
+            <span class="icon ion-checkmark">30%提成</span>
+            <span class="icon ion-checkmark">40%提成</span>
+            <span class="icon ion-checkmark">50%提成</span>
+            <span class="icon ion-checkmark active">60%提成</span>
+            <span class="icon ion-checkmark">70%提成</span>
+            <span class="icon ion-checkmark">80%提成</span>
+            <span class="icon ion-checkmark">90%提成</span>
+        </div>
+        <div class="tab_content ng-hide">
+            <span class="icon ion-checkmark">全部职位</span>
+            <span class="icon ion-checkmark active">助理</span>
+            <span class="icon ion-checkmark">技师</span>
+            <span class="icon ion-checkmark">发型师</span>
+            <span class="icon ion-checkmark">总监</span>
+            <span class="icon ion-checkmark">店长</span>
+        </div>
+    </div>
+    <div class="tab_back_drop"></div>
+
+    <ion-content class="paddingtop44">
+
+        <ul class="shop_list">
+            <li page-jump data-router="qianxun.shop-detail" data-options="{id:1234}">
+                <h3>西湖区-永琪美发（西湖店）</h3>
+                <p><span>发型师</span>底薪500+30%提成</p>
+                <p><span>技师</span>底薪500+30%提成</p>
+                <p><span>助理</span>底薪500+30%提成</p>
+            </li>
+            <li>
+                <h3>西湖区-永琪美发（西湖店）</h3>
+                <p><span>发型师</span>底薪500+30%提成</p>
+                <p><span>技师</span>底薪500+30%提成</p>
+                <p><span>助理</span>底薪500+30%提成</p>
+            </li>
+            <li>
+                <h3>西湖区-永琪美发（西湖店）</h3>
+                <p><span>发型师</span>底薪500+30%提成</p>
+                <p><span>技师</span>底薪500+30%提成</p>
+                <p><span>助理</span>底薪500+30%提成</p>
+            </li>
+        </ul>
+
+        <ion-infinite-scroll on-infinite="loadMore()" distance="1%" ng-if="Deploy.isMore"></ion-infinite-scroll>
+
+        <div class="mod_no_more" ng-if="!Deploy.isMore">没有更多数据了！</div>
+
+    </ion-content>
+</ion-view>

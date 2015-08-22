@@ -49,9 +49,20 @@
         background-color: #fff;
         span {
             display: block;
-            text-align: center;
+            text-align: left;
             line-height: 40px;
+            padding-left: 20px;
             @include border_bottom_half;
+            &:before {
+                float: right;
+                display: none;
+                color: #296ad4;
+            }
+            &.active:before {
+                display: block;
+                margin-top: 13px;
+                margin-right: 15px;
+            }
         }
     }
 }
@@ -104,6 +115,28 @@
     }
 }
 
+.worker_list {
+    background-color: #fff;
+    li {
+        padding: 10px 15px;
+        @include border_bottom_half;
+        h3 {
+            color: #296ad4;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        p {
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 0;
+            @include ellipsis;
+            span {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
 .det_warp {
     padding: 10px 15px;
     background-color: #fff;
@@ -122,9 +155,28 @@
         margin-bottom: 5px;
         @include ellipsis;
     }
+    .det_introduce {
+        font-size: 13px;
+        color: #999;
+        margin-bottom: 0;
+        @include ellipsis;
+        span {
+            margin-right: 10px;
+        }
+    }
+    .det_evaluation {
+        @include multi_ellipsis(3);
+    }
     .det_attr {
         width: 100%;
         overflow: hidden;
+        padding-top: 10px;
+        h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #4e8ef7;
+        }
         span {
             display: inline-block;
             @include border_half;
@@ -142,11 +194,18 @@
             font-weight: bold;
             margin-bottom: 5px;
             color: #4e8ef7;
+            span {
+                font-size: 13px;
+                vertical-align: bottom;
+            }
         }
         p {
             color: #999;
             margin-bottom: 3px;
             font-size: 13px;
+            span {
+                margin-right: 15px;
+            }
         }
     }
     .det_job {
@@ -166,7 +225,18 @@
                 margin-top: -2px;
             }
         }
+        .det_job_c {
+            margin-bottom: 12px;
+            p {
+                font-size: 13px;
+                color: #999;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
+        }
         .job_item {
+            @include border_bottom_half;
+            padding: 8px 0;
             color: #ffaa00;
             font-size: 14px;
             span {
@@ -177,6 +247,7 @@
             p {
                 color: #999;
                 font-size: 13px;
+                margin-bottom: 0;
             }
         }
     }
@@ -197,5 +268,43 @@
         font-size: 12px;
         display: inline-block;
         vertical-align: top;
+    }
+}
+
+.worker_btn_tip {
+    padding-top: 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.worker_btn {
+    width: 100%;
+    height: 44px;
+    background-color: #4e8ef7;
+    color: #fff;
+    text-align: center;
+}
+
+.feedback {
+    padding: 15px;
+    textarea {
+        width: 100%;
+        height: 200px;
+        padding: 6px 10px;
+        line-height: 18px;
+        @include border_top_half;
+        background-color: #fff;
+    }
+    button {
+        display: block;
+        margin: 15px auto;
+        width: 120px;
+        height: 36px;
+        background-color: #4e8ef7;
+        color: #fff;
+        text-align: center;
     }
 }

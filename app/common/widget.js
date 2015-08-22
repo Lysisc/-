@@ -301,37 +301,6 @@ qianXun.factory('widget', function ($http, $cacheFactory, $rootScope, $compile, 
             }
 
             return status;
-        },
-
-        tabSwitch: function (scope) {
-            scope.tabSwitch = function (index) {
-                var $tab = angular.element(document.querySelector('.mod_tab_box')).find('a'),
-                    $tabCont = angular.element(document.querySelectorAll('.tab_content')),
-                    $backDrop = angular.element(document.querySelector('.tab_back_drop'));
-
-                $tab.removeClass('active');
-
-                if (index) {
-
-                    var $thisTab = $tab.eq(index - 1);
-                        $thisTabCont = $tabCont.eq(index - 1);
-
-                    if ($thisTabCont.hasClass('ng-hide')) {
-                        $tabCont.addClass('ng-hide');
-                        $thisTab.addClass('active');
-                        $thisTabCont.removeClass('ng-hide');
-                        $backDrop.addClass('active');
-                    } else {
-                        $thisTabCont.addClass('ng-hide');
-                        $backDrop.removeClass('active');
-                    }
-
-                } else {
-                    $tabCont.addClass('ng-hide');
-                    $backDrop.removeClass('active');
-                }
-
-            };
         }
 
     };
