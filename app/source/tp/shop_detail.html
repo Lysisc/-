@@ -31,7 +31,7 @@
             <p>包吃 包住</p>
         </div>
         <div class="det_job" ngd-click="itemClick($event)" selector="div">
-            <h3><a>意见反馈</a>热招职位</h3>
+            <h3><a page-jump data-router="qianxun.feedback" data-options="{type:'shop_detail'}">意见反馈</a>热招职位</h3>
             <div class="job_item">
                 <span>发型总监</span>保底5000+30%提成
                 <p class="ng-hide">前3个月保底
@@ -56,8 +56,11 @@
             </div>
         </div>
     </ion-content>
-    <button class="det_contact">王先生
+</ion-view>
+
+<ion-footer-bar>
+    <button class="footer_btn">王先生
         <br> 15743251234
         <span>（联系前请先说明来自好找招聘）</span>
     </button>
-</ion-view>
+</ion-footer-bar>

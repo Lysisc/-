@@ -1,5 +1,9 @@
 qianXun.controller('shopListCtrl', function ($scope, $stateParams, $ionicNavBarDelegate, $ionicScrollDelegate, widget) {
 
+    $scope.tabItemJump = function (id) {
+        alert(id);
+    };
+
     // $scope.Deploy = {
     //     cateId: $stateParams.id,
     //     currentTab: 1,

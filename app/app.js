@@ -15,9 +15,19 @@ qianXun.config(function ($stateProvider, $urlRouterProvider) {
             controller: 'shopListCtrl'
         })
         .state('qianxun.shop-detail', { //门店列表页
-            url: '/shop-detail/:id',
+            url: '/shop-detail/:sid',
             templateUrl: 'source/tp/shop_detail.html',
             controller: 'shopDetailCtrl'
+        })
+        .state('qianxun.shop-input', { //门店信息填写页
+            url: '/shop-input/:sid',
+            templateUrl: 'source/tp/shop_input.html',
+            controller: 'shopInputCtrl'
+        })
+        .state('qianxun.job-input', { //职位信息填写页
+            url: '/job-input/:sid',
+            templateUrl: 'source/tp/job_input.html',
+            controller: 'jobInputCtrl'
         })
         .state('qianxun.worker-list', { //求职者列表页
             url: '/worker-list',
@@ -28,6 +38,11 @@ qianXun.config(function ($stateProvider, $urlRouterProvider) {
             url: '/worker-detail',
             templateUrl: 'source/tp/worker_detail.html',
             controller: 'workerDetailCtrl'
+        })
+        .state('qianxun.create-resume', { //创建简历页
+            url: '/create-resume/:uid',
+            templateUrl: 'source/tp/create_resume.html',
+            controller: 'createResumeCtrl'
         })
         .state('qianxun.feedback', { //意见反馈页
             url: '/feedback/:type',

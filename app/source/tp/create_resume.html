@@ -1,0 +1,396 @@
+<header-bar title="创建简历"></header-bar>
+
+<ion-view>
+    <ion-content class="data_input">
+        <div class="input_cont">
+            <h3>基本信息</h3>
+            <ul>
+                <li>
+                    <span>姓名</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="填写本人姓名">
+                    </div>
+                </li>
+                <li>
+                    <span>性别</span>
+                    <div class="input_ctrl checkbox">
+                        <label><input type="radio" value="男" name="sex">男</label>
+                        <label><input type="radio" value="女" name="sex">女</label>
+                    </div>
+                </li>
+                <li>
+                    <span>出生年份</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>1991年</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>婚姻状态</span>
+                    <div class="input_ctrl checkbox" style="padding-top: 5px;">
+                        <label><input type="radio" value="未婚" name="marital">未婚</label>
+                        <label><input type="radio" value="已婚" name="marital">已婚</label>
+                        <label><input type="radio" value="已育" name="marital">已育</label>
+                    </div>
+                </li>
+                <li>
+                    <span>联系电话</span>
+                    <div class="input_ctrl">
+                        <input type="number" placeholder="用于招聘方与你沟通">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="input_cont">
+            <h3>行业经验</h3>
+            <ul>
+                <li>
+                    <span>从业时间</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>1991年</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span class="spe">擅长技术<em>(最多选3项)</em></span>
+                    <div class="input_ctrl checkbox">
+                        <label><input type="checkbox">女士精剪</label>
+                        <label><input type="checkbox">男士精剪</label>
+                        <label><input type="checkbox">吹风造型</label>
+                        <label><input type="checkbox">烫发造型</label>
+                        <label><input type="checkbox">染发造型</label>
+                        <label><input type="checkbox">接发造型</label>
+                        <label><input type="checkbox">盘发造型</label>
+                        <label><input type="checkbox">女士创意</label>
+                        <label><input type="checkbox">口才营销</label>
+                    </div>
+                </li>
+                <li>
+                    <span>开店时间</span>
+                    <div class="input_ctrl checkbox">
+                        <label><input type="radio" value="开过" name="time">开过</label>
+                        <label><input type="radio" value="没开过" name="time">没开过</label>
+                    </div>
+                </li>
+                <li>
+                    <span>门店名称</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="详细名称，包括分店名">
+                    </div>
+                </li>
+                <li>
+                    <span>门店类型</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>专业技术店</option>
+                            <option>连锁技术店</option>
+                            <option>综合店</option>
+                            <option>连锁综合店</option>
+                            <option>个人工作室</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>开店模式</span>
+                    <div class="input_ctrl checkbox">
+                        <label><input type="radio" value="单干" name="mode">单干</label>
+                        <label><input type="radio" value="合伙" name="mode">合伙</label>
+                    </div>
+                </li>
+                <li>
+                    <span>门店面积</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>30平米以下</option>
+                            <option>30-50平米</option>
+                            <option>50-80平米</option>
+                            <option>80-110平米</option>
+                            <option>110-150平米</option>
+                            <option>150-200平米</option>
+                            <option>200-300平米</option>
+                            <option>300-400平米</option>
+                            <option>400-500平米</option>
+                            <option>500平米以上</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>员工人数</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>5人以下</option>
+                            <option>5-10人</option>
+                            <option>10-20人</option>
+                            <option>20-30人</option>
+                            <option>30-40人</option>
+                            <option>40-50人</option>
+                            <option>50-70人</option>
+                            <option>70-100人</option>
+                            <option>100人以上</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="input_cont">
+            <h3>求职意向</h3>
+            <ul>
+                <li>
+                    <span>期望职位</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>助理</option>
+                            <option>技师</option>
+                            <option>发型师</option>
+                            <option>总监</option>
+                            <option>店长</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>薪资水平</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>保底</option>
+                            <option>底薪</option>
+                        </select>
+                    </div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>500元</option>
+                            <option>1000元</option>
+                            <option>1500元</option>
+                            <option>2000元</option>
+                            <option>2500元</option>
+                            <option>3000元</option>
+                            <option>3500元</option>
+                            <option>4000元</option>
+                            <option>4500元</option>
+                            <option>5000元</option>
+                            <option>5500元</option>
+                            <option>6000元</option>
+                        </select>
+                    </div>
+                    <div class="add">+</div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>提成10%</option>
+                            <option>提成20%</option>
+                            <option>提成30%</option>
+                            <option>提成40%</option>
+                            <option>提成50%</option>
+                            <option>提成60%</option>
+                            <option>提成70%</option>
+                            <option>提成80%</option>
+                            <option>提成90%</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>保底时长</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>前1个月</option>
+                            <option>前2个月</option>
+                            <option>前3个月</option>
+                            <option>前4个月</option>
+                            <option>前5个月</option>
+                            <option>前6个月</option>
+                            <option>无时间要求</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>工作内容</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="">
+                    </div>
+                </li>
+                <li>
+                    <span>门店名称</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="详细名称，包括分店名">
+                    </div>
+                </li>
+                <li>
+                    <span>工作时间</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>2011年4月</option>
+                        </select>
+                    </div>
+                    <div class="add">至</div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>2014年5月</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>工作职位</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>助理</option>
+                            <option>技师</option>
+                            <option>发型师</option>
+                            <option>总监</option>
+                            <option>店长</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>薪资水平</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>保底</option>
+                            <option>底薪</option>
+                        </select>
+                    </div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>500元</option>
+                            <option>1000元</option>
+                            <option>1500元</option>
+                            <option>2000元</option>
+                            <option>2500元</option>
+                            <option>3000元</option>
+                            <option>3500元</option>
+                            <option>4000元</option>
+                            <option>4500元</option>
+                            <option>5000元</option>
+                            <option>5500元</option>
+                            <option>6000元</option>
+                        </select>
+                    </div>
+                    <div class="add">+</div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>提成10%</option>
+                            <option>提成20%</option>
+                            <option>提成30%</option>
+                            <option>提成40%</option>
+                            <option>提成50%</option>
+                            <option>提成60%</option>
+                            <option>提成70%</option>
+                            <option>提成80%</option>
+                            <option>提成90%</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>薪资水平</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>保底</option>
+                            <option>底薪</option>
+                        </select>
+                    </div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>500元</option>
+                            <option>1000元</option>
+                            <option>1500元</option>
+                            <option>2000元</option>
+                            <option>2500元</option>
+                            <option>3000元</option>
+                            <option>3500元</option>
+                            <option>4000元</option>
+                            <option>4500元</option>
+                            <option>5000元</option>
+                            <option>5500元</option>
+                            <option>6000元</option>
+                        </select>
+                    </div>
+                    <div class="add">+</div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>提成10%</option>
+                            <option>提成20%</option>
+                            <option>提成30%</option>
+                            <option>提成40%</option>
+                            <option>提成50%</option>
+                            <option>提成60%</option>
+                            <option>提成70%</option>
+                            <option>提成80%</option>
+                            <option>提成90%</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>工作内容</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="data_input_tip">完整的工作经历能提高求职成功率30%</p>
+        <button class="add_job">添加工作经历</button>
+        <div class="input_cont">
+            <h3>教育/培训经历</h3>
+            <ul>
+                <li>
+                    <span>学校名称</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="详细名称">
+                    </div>
+                </li>
+                <li>
+                    <span>学习时间</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>2011年4月</option>
+                        </select>
+                    </div>
+                    <div class="add">至</div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>2014年5月</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>学习内容</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="">
+                    </div>
+                </li>
+                <li></li>
+                <li>
+                    <span>学校名称</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="详细名称">
+                    </div>
+                </li>
+                <li>
+                    <span>学习时间</span>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>2011年4月</option>
+                        </select>
+                    </div>
+                    <div class="add">至</div>
+                    <div class="input_ctrl icon ion-arrow-down-b">
+                        <select>
+                            <option>2014年5月</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <span>学习内容</span>
+                    <div class="input_ctrl">
+                        <input type="text" placeholder="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="data_input_tip">详细的教育/培训经历能帮你脱颖而出</p>
+        <button class="add_job">添加教育/培训经历</button><br>
+    </ion-content>
+</ion-view>
+
+<ion-footer-bar>
+    <button page-jump data-router="qianxun.job-input" data-options="{id:1234}" class="footer_btn center">提交简历</button>
+</ion-footer-bar>
